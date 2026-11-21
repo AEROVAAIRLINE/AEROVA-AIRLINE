@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now | AEROVA AIRLINES</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">AEROVA <span>AIRLINES</span></a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="campaigns.html">Campaigns</a>
+      <a href="ourfleet.html">Our Fleet</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="booking-page">
+
+    <section class="booking-hero">
+      <img src="Photos/AEROVA Dreamliner at Sunset.png"
+           alt="AEROVA Airlines Aircraft"
+           class="booking-hero-image">
+
+      <div class="booking-hero-content">
+        <h1>BOOK YOUR NEXT JOURNEY</h1>
+        <p>Discover new destinations with AEROVA Airlines.</p>
+      </div>
+    </section>
+
+    <section class="booking-section">
+<br><br><br>
+      <div class="booking-heading">
+        <span>FLIGHT RESERVATION</span>
+        <h2>Where Would You Like to Go?</h2>
+        <p>Enter your travel details to plan your next trip.</p>
+      </div>
+
+      <form class="booking-form" action="flights.html">
+
+        <div class="booking-trip-type">
+          <label>
+            <input type="radio" name="trip" value="round" checked>
+            Round Trip
+          </label>
+
+          <label>
+            <input type="radio" name="trip" value="oneway">
+            One Way
+          </label>
+        </div>
+
+        <div class="booking-fields">
+
+          <div class="booking-field">
+            <label for="from">FROM</label>
+            <select id="from" name="from" required>
+              <option value="">Select departure</option>
+
+              <optgroup label="Saudi Arabia">
+                <option>Riyadh - King Khalid (RUH)</option>
+                <option>Jeddah - King Abdulaziz (JED)</option>
+                <option>Dammam - King Fahd (DMM)</option>
+                <option>Madinah - Prince Mohammad bin Abdulaziz (MED)</option>
+                <option>Abha (AHB)</option>
+                <option>Taif (TIF)</option>
+                <option>Tabuk (TUU)</option>
+                <option>Yanbu (YNB)</option>
+                <option>Jazan (GIZ)</option>
+                <option>AlUla (ULH)</option>
+                <option>Hail (HAS)</option>
+                <option>Qassim - Prince Naif bin Abdulaziz (ELQ)</option>
+                <option>Najran (EAM)</option>
+                <option>Al Jouf - Sakaka (AJF)</option>
+                <option>Arar (RAE)</option>
+                <option>Al Ahsa - Hofuf (HOF)</option>
+              </optgroup>
+
+              <optgroup label="International">
+                <option>Manama - Bahrain (BAH)</option>
+                <option>Dubai (DXB)</option>
+                <option>Moscow (MOW)</option>
+                <option>Istanbul (IST)</option>
+                <option>London (LHR)</option>
+                <option>Paris (CDG)</option>
+                <option>Rome (FCO)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="booking-field">
+            <label for="to">TO</label>
+            <select id="to" name="to" required>
+              <option value="">Select destination</option>
+
+              <optgroup label="Saudi Arabia">
+                <option>Riyadh - King Khalid (RUH)</option>
+                <option>Jeddah - King Abdulaziz (JED)</option>
+                <option>Dammam - King Fahd (DMM)</option>
+                <option>Madinah - Prince Mohammad bin Abdulaziz (MED)</option>
+                <option>Abha (AHB)</option>
+                <option>Taif (TIF)</option>
+                <option>Tabuk (TUU)</option>
+                <option>Yanbu (YNB)</option>
+                <option>Jazan (GIZ)</option>
+                <option>AlUla (ULH)</option>
+                <option>Hail (HAS)</option>
+                <option>Qassim - Prince Naif bin Abdulaziz (ELQ)</option>
+                <option>Najran (EAM)</option>
+                <option>Al Jouf - Sakaka (AJF)</option>
+                <option>Arar (RAE)</option>
+                <option>Al Ahsa - Hofuf (HOF)</option>
+              </optgroup>
+
+              <optgroup label="International">
+                <option>Manama - Bahrain (BAH)</option>
+                <option>Dubai (DXB)</option>
+                <option>Moscow (MOW)</option>
+                <option>Istanbul (IST)</option>
+                <option>London (LHR)</option>
+                <option>Paris (CDG)</option>
+                <option>Rome (FCO)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="booking-field">
+            <label for="departure">DEPARTURE</label>
+            <input type="date" id="departure" name="departure" required>
+          </div>
+
+          <div class="booking-field return-field">
+            <label for="return">RETURN</label>
+            <input type="date" id="return" name="return">
+          </div>
+
+          <div class="booking-field">
+            <label for="passengers">PASSENGERS</label>
+            <select id="passengers" name="passengers">
+              <option>1 Passenger</option>
+              <option>2 Passengers</option>
+              <option>3 Passengers</option>
+              <option>4 Passengers</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button type="submit" class="booking-search-btn">
+          Search Flights
+        </button>
+
+        <p class="booking-note">
+          Find flights to destinations across Saudi Arabia and beyond.
+        </p>
+
+      </form>
+    </section>
+
+    <section class="booking-destinations">
+
+      <div class="booking-heading">
+        <span>EXPLORE THE WORLD</span>
+        <h2>Popular Destinations</h2>
+        <p>Get inspired by some of our most popular destinations.</p>
+      </div>
+
+      <div class="booking-destination-grid">
+
+        <div class="booking-destination-card">
+          <img src="Photos/Moscow.jpg" alt="Moscow, Russia">
+          <div class="booking-destination-info">
+            <h3>Moscow</h3>
+            <p>Russia</p>
+          </div>
+        </div>
+
+        <div class="booking-destination-card">
+          <img src="Photos/London.avif" alt="London, United Kingdom">
+          <div class="booking-destination-info">
+            <h3>London</h3>
+            <p>United Kingdom</p>
+          </div>
+        </div>
+
+        <div class="booking-destination-card">
+          <img src="Photos/Istanbul.avif" alt="Istanbul, Türkiye">
+          <div class="booking-destination-info">
+            <h3>Istanbul</h3>
+            <p>Türkiye</p>
+          </div>
+        </div>
+
+        <div class="booking-destination-card">
+          <img src="Photos/Paris.avif" alt="Paris, France">
+          <div class="booking-destination-info">
+            <h3>Paris</h3>
+            <p>France</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="booking-bottom">
+      <h2>Travel Beyond Expectations</h2>
+      <p>
+        From takeoff to landing, enjoy every moment
+        of your journey with AEROVA AIRLINES.
+      </p>
+      <a href="ourfleet.html">Discover Our Fleet</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
